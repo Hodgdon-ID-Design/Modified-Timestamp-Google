@@ -1,0 +1,12 @@
+function onEdit(e) {
+  var sheet = e.source.getActiveSheet();
+  var editedRow = e.range.getRow();
+  var lastModifiedCell = sheet.getRange(editedRow,7) // Column G
+
+if (editedRow >= 2) { // Starting at row 2
+  var timestamp = new Date();
+  var ViewerTimezone = Session.getScriptTimeZone();
+  var formattedTimestamp = Utilities.formatDate(timestamp, ViewerTimezone, "MM-dd-yyyy hh:mm:ss a");
+  lastModifiedCell.setValue(formattedTimestamp);
+  }
+}
