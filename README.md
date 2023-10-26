@@ -1,2 +1,2 @@
 # Modified-Timestamp-Google
-Javascript code for creating a modified timestamp in a Google Sheets doc
+This code was frequently employed to monitor changes made in Google Sheet rows. It was frequently integrated with other scripts and Google Sheet formulas to enhance efficiency and productivity.
